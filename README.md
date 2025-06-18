@@ -10,11 +10,12 @@
 4. To add another Wi-Fi run `armbian-config` and the add it in the GUI.
 5. `nand-sata-install` to move system from SD card to emmc (internal oragePi flash storage)
 6. Install [Avahi](https://wiki.archlinux.org/title/Avahi) to get mDNS working and use orangepi3.local instead of IP to connect to the printer.
-7.  install klipper
+7.  install klipper with `kiauh`
     ```bash
     git clone https://github.com/dw-0/kiauh
     ./kiauh/kiauh.sh
     ```
+    Or you `docker-compose` https://github.com/mkuf/prind however podman and docker seem to have issues on armbian right now.
 Done :D You can open your printer in the browser and setup printer.cfg file
 ## Raspberry Pi setup
 1. Run `rpi-imager` and flash mainsail to a raspberry pi.

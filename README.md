@@ -9,7 +9,8 @@
 3. Put SD into Orange PI and turn it on. After it turns on, initial config will be started. E.g. set a root password, timezone etc.
 4. To add another Wi-Fi run `armbian-config` and the add it in the GUI.
 5. `nand-sata-install` to move system from SD card to emmc (internal oragePi flash storage)
-6.  install klipper
+6. Install [Avahi](https://wiki.archlinux.org/title/Avahi) to get mDNS working and use orangepi3.local instead of IP to connect to the printer.
+7.  install klipper
     ```bash
     git clone https://github.com/dw-0/kiauh
     ./kiauh/kiauh.sh
@@ -38,5 +39,6 @@ Insert the SD to the SKR board. It will flash itself.
 
 ## Calibration (after nozzle change)
 
-Run in Console PROBE_CALIBRATION, the use a piece of paper to calibrate the offset.
-Run BED_SCREWS_ADJUST after major movements of the printer
+Run in Console `PROBE_CALIBRATION`, the use a piece of paper to calibrate the offset.
+Run `BED_SCREWS_ADJUST` after major movements of the printer.
+Run `SAVE_CONFIG` to update printer.cfg with new valies.

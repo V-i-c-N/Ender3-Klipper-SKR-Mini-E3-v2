@@ -40,6 +40,6 @@ Insert the SD to the SKR board. It will flash itself.
 
 ## Calibration (after nozzle change)
 
-Run in Console `PROBE_CALIBRATION`, the use a piece of paper to calibrate the offset.
+Run in Console `PROBE_CALIBRATE`, the use a piece of paper to calibrate the offset.
 Run `BED_SCREWS_ADJUST` after major movements of the printer.
 Run `SAVE_CONFIG` to update printer.cfg with new valies.
